@@ -1,0 +1,28 @@
+
+<head>
+  <link rel="stylesheet" href="multilayer.css">
+</head>
+<div class="toolbar">
+  <label for="bgColor">Background color:</label><input type="color" id="bgColor" value="#000000" /><output id="bgColorHex"></output>
+  <input type="checkbox" id="transparent" /><label for="transparent">transparent</label><br />
+  <label for="fgColor">Stroke color:</label><input type="color" id="fgColor" value="#00ff00" /><output id="fgColorHex"></output>
+  <input type="checkbox" id="showGrid" checked /><label for="showGrid">Show Grid</label>
+</div>
+
+<div class="stage">
+  <canvas class="layer" id="bg" width="320" height="240"></canvas>
+  <canvas class="layer" id="grid" width="320" height="240"></canvas>
+  <canvas class="layer" id="fg" width="320" height="240"></canvas>
+</div>
+
+<div class="toolbar">
+  <button type="button" id="clearFg">Clear foreground drawing</button>
+  <button type="button" id="exportAsPNG">Export As PNG</button>
+</div>
+
+<h3>Usage</h3>
+<p>
+Drag on the canvas to draw.<br/>
+</p>
+
+<script src="multilayer.js"></script>

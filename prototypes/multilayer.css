@@ -1,0 +1,22 @@
+.stage {
+  position: relative;
+}
+.layer:not(:last-child) {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.layer:last-child {
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+#bg {
+  pointer-events: none;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGElEQVQYV2N4DwX/oYBhgARgDJjEAAkAAEC99wFuu0VFAAAAAElFTkSuQmCC") repeat left top;
+}
+#fg {
+  -webkit-touch-callout: none;
+  touch-action: none;
+}
+

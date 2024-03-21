@@ -1,0 +1,36 @@
+html, body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.stage, .layer
+{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.stage {
+  position: relative;
+  background: #888;
+}
+.layer:not(:last-child) {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.layer:last-child {
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+#ruler, #grid {
+  pointer-events: none;
+}
+
+
